@@ -1,7 +1,8 @@
 package exp;
 
-import bandeau.Bandeau;
 import java.awt.Font;
+import bandeau.Bandeau;
+
 
 public class Zoom extends Effet {
 

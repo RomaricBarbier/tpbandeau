@@ -1,8 +1,7 @@
 package exp;
 
-import java.awt.Color;
-
 import bandeau.Bandeau;
+import java.awt.Color;
 
 public class ExpUtil2 {
 	  
@@ -10,10 +9,10 @@ public class ExpUtil2 {
       Bandeau monBandeau = new Bandeau();
       Scenario monscenario = new Scenario(monBandeau);
       Color couleur =  Color.RED;
-      monscenario.addEffet(new Zoom(3, monBandeau, "On zoome"));
+      monscenario.addEffet(new Zoom(3, monBandeau, "Zoomons"));
      // monscenario.addEffet(new Rotate(2, monBandeau, "On tourne"));
-      monscenario.addEffet(new Clignotant(3, monBandeau, "On clignote"));
-      monscenario.addEffet(new Couleur(monBandeau, "Change couleurs", couleur));
+      monscenario.addEffet(new Clignotant(3, monBandeau, "Clignote"));
+      monscenario.addEffet(new Couleur(monBandeau, "Changeons de couleurs", couleur));
       monscenario.afficherScenario();
 	  }
 }

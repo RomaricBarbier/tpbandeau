@@ -1,8 +1,8 @@
 package exp;
-import bandeau.Bandeau;
 
 import java.awt.Color;
 import java.awt.Font;
+import bandeau.Bandeau;
 
 public class Couleur extends Effet {
 
@@ -12,6 +12,6 @@ public class Couleur extends Effet {
 
 	public void afficher() {
 		bandeau.setMessage(message);
-                this.bandeau.setForeground(couleur);
-            }
+		this.bandeau.setForeground(couleur);
 	}
+}

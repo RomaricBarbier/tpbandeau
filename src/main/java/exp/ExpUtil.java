@@ -1,7 +1,7 @@
 package exp;
-import bandeau.Bandeau;
 import java.awt.Color;
 import java.awt.Font;
+import bandeau.Bandeau;
 public class ExpUtil {
 
     public static void main(String[] args) {
@@ -10,13 +10,24 @@ public class ExpUtil {
 
     public void exp() {
 
+
         Bandeau monBandeau = new Bandeau();
         Font font = monBandeau.getFont();
+
+
         Color back = monBandeau.getBackground();
         Color fore = monBandeau.getForeground();
 
         monBandeau.setMessage("Bonjour");
         monBandeau.sleep(1000);
+        monBandeau.setFont(new Font("Courier new", Font.PLAIN, 15));
+        monBandeau.setMessage("Tournons");
+        monBandeau.sleep(1000);
+        monBandeau.setMessage("de 90°");
+        monBandeau.setRotation(Math.PI / 1.0f);
+        monBandeau.sleep(1000);
+        monBandeau.setRotation(0.0f);
+
         monBandeau.setMessage("Changeons de police");
         monBandeau.sleep(1000);
         monBandeau.setMessage("Mettons une police Monospaced 15 Bold");
@@ -33,14 +44,7 @@ public class ExpUtil {
             monBandeau.sleep(100);
         }
         monBandeau.sleep(1000);
-
-        monBandeau.setFont(new Font("Courier new", Font.PLAIN, 15));
-        monBandeau.setMessage("Tournons");
-        monBandeau.sleep(1000);
-        monBandeau.setMessage("de 90°");
-        monBandeau.setRotation(Math.PI / 1.0f);
-        monBandeau.sleep(1000);
-        monBandeau.setRotation(0.0f);
+        monBandeau.setFont(new Font("Dialog", Font.BOLD, 20));
 
         monBandeau.setMessage("Changons la couleur du background");
         monBandeau.sleep(1000);

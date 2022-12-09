@@ -1,9 +1,9 @@
 package exp;
 
+import java.util.ArrayList;
 import bandeau.Bandeau;
 import java.awt.Color;
 import java.awt.Font;
-import java.util.ArrayList;
 
 public class Scenario {
 	
